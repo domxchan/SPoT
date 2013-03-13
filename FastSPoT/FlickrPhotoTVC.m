@@ -1,6 +1,6 @@
 //
 //  FlickrPhotoTVC.m
-//  Shutterbug
+//  FastSPoT
 //
 //  Created by Dominic Chan on 7/3/13.
 //  Copyright (c) 2013 Dominic Chan. All rights reserved.
@@ -10,11 +10,23 @@
 #import "FlickrFetcher.h"
 #define ALL_RECENTS @"SPoT_All_Recents"
 
-@interface FlickrPhotoTVC ()
+@interface FlickrPhotoTVC () <UISplitViewControllerDelegate>
 @property (nonatomic) NSUInteger maxRecents;
 @end
 
 @implementation FlickrPhotoTVC
+
+- (void)awakeFromNib
+{
+    self.splitViewController.delegate = self;
+}
+
+- (BOOL)splitViewController:(UISplitViewController *)svc
+   shouldHideViewController:(UIViewController *)vc
+              inOrientation:(UIInterfaceOrientation)orientation
+{
+    return NO;
+}
 
 - (NSUInteger)maxRecents
 {
@@ -65,7 +77,9 @@
                     
                     [self saveToRecents:self.photos[indexPath.row] viewedAt:[NSDate date]];
                     
-                    NSURL *url = [FlickrFetcher urlForPhoto:self.photos[indexPath.row] format:FlickrPhotoFormatLarge];
+                    FlickrPhotoFormat format = [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad ? FlickrPhotoFormatOriginal : FlickrPhotoFormatLarge;
+                    NSURL *url = [FlickrFetcher urlForPhoto:self.photos[indexPath.row] format:format];
+
                     [segue.destinationViewController performSelector:@selector(setImageURL:) withObject:url];
                     [segue.destinationViewController setTitle:[self titleForRow:indexPath.row]];
                 }

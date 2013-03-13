@@ -16,7 +16,7 @@
 		0F71AFFF16E9B4AA007A9098 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F71AFFE16E9B4AA007A9098 /* Default.png */; };
 		0F71B00116E9B4AA007A9098 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F71B00016E9B4AA007A9098 /* Default@2x.png */; };
 		0F71B00316E9B4AA007A9098 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F71B00216E9B4AA007A9098 /* Default-568h@2x.png */; };
-		0F71B00616E9B4AA007A9098 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F71B00416E9B4AA007A9098 /* MainStoryboard.storyboard */; };
+		0F71B00616E9B4AA007A9098 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F71B00416E9B4AA007A9098 /* iPhone.storyboard */; };
 		0F71B01A16E9B4E5007A9098 /* FlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F71B01016E9B4E5007A9098 /* FlickrPhotoTVC.m */; };
 		0F71B01B16E9B4E5007A9098 /* HawaiiImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F71B01216E9B4E5007A9098 /* HawaiiImageViewController.m */; };
 		0F71B01C16E9B4E5007A9098 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F71B01416E9B4E5007A9098 /* ImageViewController.m */; };
@@ -26,6 +26,7 @@
 		0FFB2DE916E9BC6A00B1B5ED /* TagsOfFlickrPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB2DE616E9BC6A00B1B5ED /* TagsOfFlickrPhotosTVC.m */; };
 		0FFB2DEA16E9BC6A00B1B5ED /* TagsOfStanfordFlickrPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB2DE816E9BC6A00B1B5ED /* TagsOfStanfordFlickrPhotosTVC.m */; };
 		0FFB2E2A16EA0B1800B1B5ED /* RecentPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB2E2916EA0B1800B1B5ED /* RecentPhotosTVC.m */; };
+		0FFB2E3316ECE0C000B1B5ED /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFB2E3216ECE0C000B1B5ED /* iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +43,7 @@
 		0F71AFFE16E9B4AA007A9098 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0F71B00016E9B4AA007A9098 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0F71B00216E9B4AA007A9098 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		0F71B00516E9B4AA007A9098 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		0F71B00516E9B4AA007A9098 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
 		0F71B00F16E9B4E5007A9098 /* FlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoTVC.h; sourceTree = "<group>"; };
 		0F71B01016E9B4E5007A9098 /* FlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTVC.m; sourceTree = "<group>"; };
 		0F71B01116E9B4E5007A9098 /* HawaiiImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HawaiiImageViewController.h; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		0FFB2DE816E9BC6A00B1B5ED /* TagsOfStanfordFlickrPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsOfStanfordFlickrPhotosTVC.m; sourceTree = "<group>"; };
 		0FFB2E2816EA0B1800B1B5ED /* RecentPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotosTVC.h; sourceTree = "<group>"; };
 		0FFB2E2916EA0B1800B1B5ED /* RecentPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotosTVC.m; sourceTree = "<group>"; };
+		0FFB2E3216ECE0C000B1B5ED /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +110,14 @@
 		0F71AFF216E9B4AA007A9098 /* FastSPoT */ = {
 			isa = PBXGroup;
 			children = (
+				0F71B00416E9B4AA007A9098 /* iPhone.storyboard */,
+				0FFB2E3216ECE0C000B1B5ED /* iPad.storyboard */,
 				0FFB2DE516E9BC6A00B1B5ED /* TagsOfFlickrPhotosTVC.h */,
 				0FFB2DE616E9BC6A00B1B5ED /* TagsOfFlickrPhotosTVC.m */,
 				0FFB2DE716E9BC6A00B1B5ED /* TagsOfStanfordFlickrPhotosTVC.h */,
 				0FFB2DE816E9BC6A00B1B5ED /* TagsOfStanfordFlickrPhotosTVC.m */,
 				0F71B02516E9B773007A9098 /* TagsLatestFlickrPhotosTVC.h */,
 				0F71B02616E9B773007A9098 /* TagsLatestFlickrPhotosTVC.m */,
-				0F71B00416E9B4AA007A9098 /* MainStoryboard.storyboard */,
 				0F71B00F16E9B4E5007A9098 /* FlickrPhotoTVC.h */,
 				0F71B01016E9B4E5007A9098 /* FlickrPhotoTVC.m */,
 				0FFB2E2816EA0B1800B1B5ED /* RecentPhotosTVC.h */,
@@ -204,7 +207,8 @@
 				0F71AFFF16E9B4AA007A9098 /* Default.png in Resources */,
 				0F71B00116E9B4AA007A9098 /* Default@2x.png in Resources */,
 				0F71B00316E9B4AA007A9098 /* Default-568h@2x.png in Resources */,
-				0F71B00616E9B4AA007A9098 /* MainStoryboard.storyboard in Resources */,
+				0F71B00616E9B4AA007A9098 /* iPhone.storyboard in Resources */,
+				0FFB2E3316ECE0C000B1B5ED /* iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,12 +244,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		0F71B00416E9B4AA007A9098 /* MainStoryboard.storyboard */ = {
+		0F71B00416E9B4AA007A9098 /* iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0F71B00516E9B4AA007A9098 /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
